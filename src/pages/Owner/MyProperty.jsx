@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import OwnerSideBar from "../../component/OwnerSidebar";
+import OwnerSideBar from "../../component/OwnerSideBar";
 import axios from "axios";
 import Slider from "../../component/Slider";
 
