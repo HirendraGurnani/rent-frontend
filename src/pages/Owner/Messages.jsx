@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import OwnerSideBar from '../../components/OwnerSideBar';
+import OwnerSideBar from '../../components/OwnerSidebar';
 // import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
