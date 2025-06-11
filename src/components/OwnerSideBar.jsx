@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const OwnerSideBar = () => {
+const OwnerSidebar = () => {
   return (
     <>
       <div className="alert  alert-success fw-bold main-color text-center">
@@ -50,4 +50,4 @@ const OwnerSideBar = () => {
   );
 };
 
-export default OwnerSideBar;
+export default OwnerSidebar;
