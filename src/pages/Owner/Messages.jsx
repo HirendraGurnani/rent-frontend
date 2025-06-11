@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { useParams } from 'react-router-dom';
 import axios from "axios";
-import OwnerSidebar from "../../components/OwnerSidebar";
+// import OwnerSidebar from "../../components/OwnerSidebar";
 
 const Messages = () => {
   const [allMsg, setAllMsg] = useState([]);
@@ -26,7 +26,7 @@ const Messages = () => {
     >
       <div className="row">
         <div className="col-md-3">
-          <OwnerSidebar />
+          {/* <OwnerSidebar /> */}
         </div>
         <div className="col-md-8 offset-md-1">
           <h4>My Messages</h4>

@@ -5,7 +5,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Slider from "../../components/Slider";
-import OwnerSidebar from "../../components/OwnerSidebar";
+// import OwnerSidebar from "../../components/OwnerSidebar";
 
 function AddOwnerProp() {
   let myFile = useRef();
@@ -128,7 +128,7 @@ function AddOwnerProp() {
           <div className="row">
             {/* Sidebar */}
             <div className="col-md-3">
-              <OwnerSidebar />
+              {/* <OwnerSidebar /> */}
             </div>
 
             <div className="col-md-9">

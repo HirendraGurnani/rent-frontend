@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import Slider from "../../components/Slider";
 import Slider from "../../components/Slider";
-import OwnerSidebar from "../../components/OwnerSidebar";
+// import OwnerSidebar from "../../components/OwnerSidebar";
 
 const MyAccount = () => {
   const [owner, setOwner] = useState({});
@@ -35,7 +35,7 @@ const MyAccount = () => {
       >
         <div className="row">
           <div className="col-md-3">
-            <OwnerSidebar />
+            {/* <OwnerSidebar /> */}
           </div>
 
           {/* Main Content */}
