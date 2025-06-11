@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './component/Header'
-import Footer from './component/Footer'
-import Slider from './component/Slider'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Slider from './components/Slider'
 import AllRouters from './routes/AllRouters'
-import Agent from './component/Agent'
+import Agent from './components/Agent'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RealEstateAgent from './component/RealEstateAgent'
+import RealEstateAgent from './components/RealEstateAgent'
 import Services from './pages/Services'
 
 

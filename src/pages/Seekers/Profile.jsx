@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Slider from "../../component/Slider";
-import SeekerSideBar from "../../component/SeekerSidebar";
+import Slider from "../../components/Slider";
+import SeekerSideBar from "../../components/SeekerSidebar";
 
 const Profile = () => {
   const [seeker, setSeeker] = useState({});

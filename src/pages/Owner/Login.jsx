@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 
 const Login = () => {
   let navigate = useNavigate();

@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import OwnerSideBar from "../../component/OwnerSidebar";
+import OwnerSideBar from "../../components/OwnerSidebar";
 import { useFormik } from "formik";
 import PropertySchema from "../../schema/PropertySchema";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 
 function AddOwnerProp() {
   let myFile = useRef();

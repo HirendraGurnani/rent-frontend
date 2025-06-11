@@ -6,7 +6,7 @@ import axios from "axios";
 import { API_URL } from "../../constant/API_URL";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 const Signup = () => {
   let [allState, setAllState] = useState([]);
   let [allCity, setAllCity] = useState([]);

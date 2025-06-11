@@ -6,7 +6,7 @@ import axios from "axios"; // Corrected import
 import seekerSchema from "../../schema/SeekerSignupSchema";
 import { useNavigate } from "react-router-dom";
 import { API_URL } from "../../constant/API_URL";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 
 const Signup = () => {
   let [allState, setAllState] = useState([]);

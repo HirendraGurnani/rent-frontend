@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
-import PropertyProp from "../component/PropertyProp";
-import Slider from "../component/Slider";
-import TestimonialCarousel from "../component/TestimonialCarousel";
-import RealEstateAgent from "../component/RealEstateAgent";
-import Agent from "../component/Agent";
+import PropertyProp from "../components/PropertyProp";
+import Slider from "../components/Slider";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+import RealEstateAgent from "../components/RealEstateAgent";
+import Agent from "../components/Agent";
 
 const Home = () => {
   const [allProperty, setAllProperty] = useState([]);

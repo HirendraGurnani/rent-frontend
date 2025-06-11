@@ -4,8 +4,8 @@ import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import SeekerSideBar from "../../component/SeekerSidebar";
-import Slider from "../../component/Slider";
+import SeekerSideBar from "../../components/SeekerSidebar";
+import Slider from "../../components/Slider";
 import EditPasswordSchema from "../../schema/EditPasswordSchema";
 
 const EditPassword = () => {

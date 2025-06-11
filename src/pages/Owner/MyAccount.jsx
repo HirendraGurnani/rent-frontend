@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import OwnerSideBar from "../../component/OwnerSidebar";
-// import Slider from "../../component/Slider";
-import Slider from "../../component/Slider";
+import OwnerSideBar from "../../components/OwnerSidebar";
+// import Slider from "../../components/Slider";
+import Slider from "../../components/Slider";
 
 const MyAccount = () => {
   const [owner, setOwner] = useState({});

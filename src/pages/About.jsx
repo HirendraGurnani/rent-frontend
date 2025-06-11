@@ -1,6 +1,6 @@
 import React from "react";
-import Slider from "../component/Slider";
-import TestimonialCarousel from "../component/TestimonialCarousel";
+import Slider from "../components/Slider";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 const About = () => {
   return (

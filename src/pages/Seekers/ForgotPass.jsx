@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import * as YUP from "yup";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 

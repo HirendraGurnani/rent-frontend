@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import ContactSchema from "../../schema/ContactSchema";
 import axios from "axios";
 import { API_URL } from "../../constant/API_URL";
-import Slider from "../../component/Slider";
+import Slider from "../../components/Slider";
 import { useParams } from "react-router-dom";
 
 const Contact = () => {

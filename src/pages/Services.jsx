@@ -1,9 +1,9 @@
-import Slider from "../component/Slider";
+import Slider from "../components/Slider";
 import React from "react";
 import SliderReact from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import TestimonialCarousel from "../component/TestimonialCarousel";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 const Services = () => {
   return (

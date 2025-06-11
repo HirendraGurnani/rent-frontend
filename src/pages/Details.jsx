@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import DetailsModal from "../component/DetailsModal";
-import Slider from "../component/Slider";
+import DetailsModal from "../components/DetailsModal";
+import Slider from "../components/Slider";
 // import seekerSchema from "../schema/SeekerSignupSchema";
 
 const Details = () => {
