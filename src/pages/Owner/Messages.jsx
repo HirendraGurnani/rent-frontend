@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import OwnerSidebar from "../../components/OwnerSidebar";
+import React, { useEffect, useState } from "react";
 // import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import axios from "axios";
+import OwnerSidebar from "../../components/OwnerSidebar";
 
 const Messages = () => {
   const [allMsg, setAllMsg] = useState([]);
-//   const { id } = useParams();
+  //   const { id } = useParams();
 
   useEffect(() => {
     axios
@@ -20,10 +20,13 @@ const Messages = () => {
   }, []);
 
   return (
-    <div className="container my-4" style={{ minHeight: "750px", paddingTop: "120px" }}>
+    <div
+      className="container my-4"
+      style={{ minHeight: "750px", paddingTop: "120px" }}
+    >
       <div className="row">
         <div className="col-md-3">
-        <OwnerSidebar />
+          <OwnerSidebar />
         </div>
         <div className="col-md-8 offset-md-1">
           <h4>My Messages</h4>
@@ -41,14 +44,16 @@ const Messages = () => {
             <tbody>
               {allMsg.length === 0 ? (
                 <tr>
-                  <td colSpan="5" className="text-center">No messages found.</td>
+                  <td colSpan="5" className="text-center">
+                    No messages found.
+                  </td>
                 </tr>
               ) : (
                 allMsg.map((item, index) => (
                   <tr key={item._id || index}>
                     <td>{index + 1}</td>
-                    <td>{item ? item.username : ''}</td>
-                    <td>{item ? item.email : ''}</td>
+                    <td>{item ? item.username : ""}</td>
+                    <td>{item ? item.email : ""}</td>
                     {/* <td>{item.seeker_id ? item.seeker_id.contact : ''}</td> */}
                     <td>{item.message}</td>
                     <td>{item.pid.title}</td>

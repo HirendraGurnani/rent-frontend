@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import OwnerSidebar from "../../components/OwnerSidebar";
 import { useFormik } from "formik";
 import PropertySchema from "../../schema/PropertySchema";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Slider from "../../components/Slider";
+import OwnerSidebar from "../../components/OwnerSidebar";
 
 function AddOwnerProp() {
   let myFile = useRef();
@@ -19,7 +19,7 @@ function AddOwnerProp() {
       rent: "",
       deposit: "",
       image: "",
-      advance_money :"",
+      advance_money: "",
       amenities: {
         wifi: false,
         airConditioner: false,
@@ -47,7 +47,6 @@ function AddOwnerProp() {
     //   myForm.append("rent", values.rent);
     //   myForm.append("deposit", values.deposit);
     //   myForm.append("amenities", values.amenities);
-  
 
     //   axios
     //     .post(`${import.meta.env.VITE_API_URL}/property`, myForm, {
@@ -66,54 +65,53 @@ function AddOwnerProp() {
     //     });
     // },
     onSubmit: (values) => {
-  let file = myFile.current.files[0];
+      let file = myFile.current.files[0];
 
-  // Map selected amenities to their Font Awesome icon HTML strings
-  const selectedAmenities = Object.entries(values.amenities)
-    .filter(([key, value]) => value)
-    .reduce((acc, [key]) => {
-      const iconMap = {
-        wifi: '<i class="fas fa-wifi"></i>',
-        airConditioner: '<i class="fas fa-snowflake"></i>',
-        parking: '<i class="fas fa-parking"></i>',
-        tv: '<i class="fas fa-tv"></i>',
-        kitchen: '<i class="fas fa-utensils"></i>',
-        gym: '<i class="fas fa-dumbbell"></i>',
-        pool: '<i class="fas fa-swimming-pool"></i>',
-        security: '<i class="fas fa-shield-alt"></i>',
-        balcony: '<i class="fas fa-couch"></i>',
-        heating: '<i class="fas fa-fire"></i>',
-      };
-      acc[key] = iconMap[key]; // Add HTML string
-      return acc;
-    }, {});
+      // Map selected amenities to their Font Awesome icon HTML strings
+      const selectedAmenities = Object.entries(values.amenities)
+        .filter(([key, value]) => value)
+        .reduce((acc, [key]) => {
+          const iconMap = {
+            wifi: '<i class="fas fa-wifi"></i>',
+            airConditioner: '<i class="fas fa-snowflake"></i>',
+            parking: '<i class="fas fa-parking"></i>',
+            tv: '<i class="fas fa-tv"></i>',
+            kitchen: '<i class="fas fa-utensils"></i>',
+            gym: '<i class="fas fa-dumbbell"></i>',
+            pool: '<i class="fas fa-swimming-pool"></i>',
+            security: '<i class="fas fa-shield-alt"></i>',
+            balcony: '<i class="fas fa-couch"></i>',
+            heating: '<i class="fas fa-fire"></i>',
+          };
+          acc[key] = iconMap[key]; // Add HTML string
+          return acc;
+        }, {});
 
-  let myForm = new FormData();
-  myForm.append("image", file);
-  myForm.append("title", values.title);
-  myForm.append("address", values.address);
-  myForm.append("property_type", values.property_type);
-  myForm.append("rent", values.rent);
-  myForm.append("deposit", values.deposit);
-  myForm.append("amenities", JSON.stringify(selectedAmenities)); 
-  myForm.append("advance_money",values.advance_money)
+      let myForm = new FormData();
+      myForm.append("image", file);
+      myForm.append("title", values.title);
+      myForm.append("address", values.address);
+      myForm.append("property_type", values.property_type);
+      myForm.append("rent", values.rent);
+      myForm.append("deposit", values.deposit);
+      myForm.append("amenities", JSON.stringify(selectedAmenities));
+      myForm.append("advance_money", values.advance_money);
 
-  axios
-    .post(`${import.meta.env.VITE_API_URL}/property`, myForm, {
-      headers: {
-        Authorization: localStorage.getItem("owner-token"),
-      },
-    })
-    .then((res) => {
-      alert("Property added successfully");
-      navigate("/owner/my-property");
-    })
-    .catch((err) => {
-      console.log(err);
-      alert("Error adding property");
-    });
-}
-
+      axios
+        .post(`${import.meta.env.VITE_API_URL}/property`, myForm, {
+          headers: {
+            Authorization: localStorage.getItem("owner-token"),
+          },
+        })
+        .then((res) => {
+          alert("Property added successfully");
+          navigate("/owner/my-property");
+        })
+        .catch((err) => {
+          console.log(err);
+          alert("Error adding property");
+        });
+    },
   });
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -278,9 +276,9 @@ function AddOwnerProp() {
                       </small>
                     )}
                   </div>
-                     <div className="my-4">
+                  <div className="my-4">
                     <label htmlFor="advance_money" className="form-label">
-                     Advance money
+                      Advance money
                     </label>
                     <input
                       name="advance_money"
@@ -291,16 +289,18 @@ function AddOwnerProp() {
                       id="advance_money"
                       placeholder="Enter advance_money"
                       className={`form-control ${
-                        propFrm.errors.advance_money && propFrm.touched.advance_money
+                        propFrm.errors.advance_money &&
+                        propFrm.touched.advance_money
                           ? "is-invalid"
                           : ""
                       }`}
                     />
-                    {propFrm.errors.advance_money && propFrm.touched.advance_money && (
-                      <small className="text-danger">
-                        {propFrm.errors.advance_money}
-                      </small>
-                    )}
+                    {propFrm.errors.advance_money &&
+                      propFrm.touched.advance_money && (
+                        <small className="text-danger">
+                          {propFrm.errors.advance_money}
+                        </small>
+                      )}
                   </div>
 
                   <div className="my-4">

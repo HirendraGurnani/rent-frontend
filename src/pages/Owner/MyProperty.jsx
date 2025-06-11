@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import OwnerSidebar from "../../components/OwnerSidebar";
 
 import axios from "axios";
-import Slider from "../../components/Slider"; 
+import Slider from "../../components/Slider";
+import OwnerSidebar from "../../components/OwnerSidebar";
 
 const MyProperty = () => {
   const [property, setProperty] = useState([]);
