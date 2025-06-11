@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import OwnerSideBar from "../../components/OwnerSidebar";
+import OwnerSidebar from "../../components/OwnerSidebar";
+
 import axios from "axios";
 import Slider from "../../components/Slider"; 
 
@@ -30,7 +31,7 @@ const MyProperty = () => {
         <div className="row">
           {/* Sidebar */}
           <div className="col-12 col-md-3 mb-4">
-            <OwnerSideBar />
+            <OwnerSidebar />
           </div>
 
           {/* Main Content */}

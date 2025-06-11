@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import OwnerSideBar from "../../components/OwnerSidebar";
+import OwnerSidebar from "../../components/OwnerSidebar";
 import { useFormik } from "formik";
 import PropertySchema from "../../schema/PropertySchema";
 import axios from "axios";
@@ -130,7 +130,7 @@ function AddOwnerProp() {
           <div className="row">
             {/* Sidebar */}
             <div className="col-md-3">
-              <OwnerSideBar />
+              <OwnerSidebar />
             </div>
 
             <div className="col-md-9">

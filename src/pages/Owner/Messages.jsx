@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import OwnerSideBar from '../../components/OwnerSidebar';
+import OwnerSidebar from "../../components/OwnerSidebar";
 // import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
@@ -23,7 +23,7 @@ const Messages = () => {
     <div className="container my-4" style={{ minHeight: "750px", paddingTop: "120px" }}>
       <div className="row">
         <div className="col-md-3">
-        <OwnerSideBar />
+        <OwnerSidebar />
         </div>
         <div className="col-md-8 offset-md-1">
           <h4>My Messages</h4>

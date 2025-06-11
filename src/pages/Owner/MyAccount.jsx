@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import OwnerSideBar from "../../components/OwnerSidebar";
+import OwnerSidebar from "../../components/OwnerSidebar";
 // import Slider from "../../components/Slider";
 import Slider from "../../components/Slider";
 
@@ -37,7 +37,7 @@ useEffect(() => {
       style={{ marginBottom: "100px", marginTop: "100px" }}
     >
       <div className="row">
-      <div className="col-md-3"><OwnerSideBar /></div>
+      <div className="col-md-3"><OwnerSidebar /></div>
       
 
       {/* Main Content */}
